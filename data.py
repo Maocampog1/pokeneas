@@ -1,8 +1,8 @@
 # Configuración mínima para S3 público (SIN credenciales; el bucket tendrá acceso público)
 import os
 
-S3_BUCKET = os.getenv("S3_BUCKET", "tu-bucket-pokeneas")  # cámbialo o pásalo por env
-AWS_REGION = os.getenv("AWS_REGION", "us-east-1")         # cámbialo o pásalo por env
+S3_BUCKET = os.getenv("S3_BUCKET", "pokeneas-media-maocampog1")  
+AWS_REGION = os.getenv("AWS_REGION", "us-east-1")         
 
 def s3_url(key: str) -> str:
     # URL pública estándar de S3 (requiere que el bucket/objeto sea público)
